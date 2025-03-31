@@ -1,23 +1,15 @@
 import React from 'react'
 import './Skills.css'
 import "bootstrap-icons/font/bootstrap-icons.css";
-import { useState } from 'react';
 
-function Skills() {
-    const [isClosed, setIsClosed] = useState(false)
-
-
-    const closeWindow = () => {
-        setIsClosed(!isClosed)
-    }
-
+function Skills(props) {
 
 
   return (
     <>
     <div id='skills-container'>
         <div id='skills-title'>
-        <i id='skills-exit' class="bi bi-x-square" onClick={closeWindow}></i>
+        <i id='skills-exit' class="bi bi-x-square" onClick={props.hideBox}></i>
         skills.exe
         </div>
 
@@ -31,14 +23,6 @@ function Skills() {
         <i id='skill-icon' class="bi bi-cloud"></i>
         </div>
     </div>
-
-
-    <style jsx> {`
-    #skills-container{
-        display: ${isClosed ? 'block' : 'none'};
-    }
-    `}
-    </style>
     </>
   )
 }

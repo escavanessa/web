@@ -7,13 +7,21 @@ import { useState } from 'react';
 function Desktop() {
     const [skillsVisible, setSkillsVisible] = useState(false)
 
-    const toggle = () => {
-      setSkillsVisible(!skillsVisible)
+    const showBox = () => {
+      if (!skillsVisible) {
+        setSkillsVisible(true)
+      }
+    }
+
+    const hideBox = () => {
+      if (setSkillsVisible) {
+        setSkillsVisible(false)
+      }
     }
 
   return (
     <>
-    <i class="bi bi-floppy" onClick={toggle}></i>
+    <i class="bi bi-floppy" onClick={showBox}></i>
 
 
     <i class="bi bi-person"></i>
@@ -21,7 +29,9 @@ function Desktop() {
     <i class="bi bi-envelope-exclamation"></i>
     <i class="bi bi-file-earmark-text"></i>
 
-    <Skills isVisible={skillsVisible}/>
+    <Skills isVisible={skillsVisible} 
+    hideBox = {hideBox}
+    />
 
     <style jsx> {`
     #skills-container{
