@@ -9,7 +9,7 @@ function Skills(props) {
     <>
     <div id='skills-container'>
         <div id='skills-title'>
-        <i id='skills-exit' class="bi bi-x-square" onClick={props.hideBox}></i>
+        <i id='skills-exit' class="bi bi-x-square" onClick={props.hideSkills}></i>
         skills.exe
         </div>
 
