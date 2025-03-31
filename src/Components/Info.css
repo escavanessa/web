@@ -1,0 +1,43 @@
+#info-container{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    height: 200px;
+    width: 160px;
+    box-shadow: 4px 4px black;
+    margin: 10px;
+}
+
+
+#info-title{
+    padding: 2px;
+    display: flex;
+    border-bottom: 2px solid black;
+}
+
+.info-title{
+    font-size: small;
+}
+
+
+#info-inner{
+    padding: 2px;
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+#info-exit{
+    padding-right: 4px;
+}
+
+#info-context{
+    display: flex;
+    text-align: left;
+    padding: 4px;
+}
+
+#info-icon{
+    font-size: 30px;
+    padding: 10px;
+}

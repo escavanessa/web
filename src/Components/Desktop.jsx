@@ -2,6 +2,7 @@ import React from 'react'
 import './Desktop.css'
 import "bootstrap-icons/font/bootstrap-icons.css";
 import Skills from './Skills';
+import Info from './Info';
 import { useState } from 'react';
 
 function Desktop() {
@@ -32,6 +33,8 @@ function Desktop() {
     <Skills isVisible={skillsVisible} 
     hideBox = {hideBox}
     />
+    <Info />
+    
 
     <style jsx> {`
     #skills-container{
