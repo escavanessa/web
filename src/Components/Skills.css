@@ -1,0 +1,28 @@
+#skills-container{
+    display: block;
+    border: 2px solid black;
+    height: 200px;
+    width: 160px;
+    box-shadow: 4px 4px black;
+}
+
+#skills-inner{
+    padding: 2px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#skill-icon{
+    padding: 12px;
+    font-size: x-large;
+}
+
+#skills-title {
+    padding: 2px;
+    display: flex;
+    border-bottom: 2px solid black;
+}
+
+#skills-exit {
+    padding-right: 4px;
+}
