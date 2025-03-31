@@ -11,14 +11,6 @@ function Desktop() {
       setSkillsVisible(!skillsVisible)
     }
 
-
-
-
-
-
-
-
-
   return (
     <>
     <i class="bi bi-floppy" onClick={toggle}></i>
