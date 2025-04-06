@@ -1,7 +1,8 @@
 import './App.css';
 import Desktop from './Components/Desktop';
-// import Playground from './Components/Playground';
-// import Toggle from './Components/TestFiles/Toggle';
+import '@react95/core/GlobalStyle';
+import '@react95/core/themes/win95.css';
+
 
 function App() {
   return (
