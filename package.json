@@ -3,11 +3,16 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@react95/core": "^9.2.1",
+    "@react95/icons": "^2.1.1",
+    "@sakun/system.css": "^0.1.11",
+    "98.css": "^0.1.20",
     "bootstrap-icons": "^1.11.3",
     "cra-template": "1.2.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-scripts": "5.0.1",
+    "react95": "^4.0.0",
     "styled-components": "^6.1.16"
   },
   "scripts": {
