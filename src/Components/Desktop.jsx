@@ -1,6 +1,10 @@
 import React from 'react'
 import './Desktop.css'
-import "bootstrap-icons/font/bootstrap-icons.css";
+import { MediaCd } from '@react95/icons'
+import { Mail } from '@react95/icons'
+import { RecycleFull } from '@react95/icons'
+import { Wmsui323919 } from '@react95/icons'
+import { Bookmark } from '@react95/icons'
 import Skills from './Skills';
 import Info from './Info';
 import { useState } from 'react';
@@ -37,22 +41,48 @@ function Desktop() {
 
   return (
     <>
-    <i class="bi bi-floppy" onClick={showSkills}></i>
+    <div id='desktop-container' className='desktop-container'>
+      <div className='desktop-icon'>
+      <Mail variant="32x32_4" />
+      <p>test</p>
+      </div>
 
+      <div className='desktop-icon'>
+      <MediaCd variant="32x32_4"/>
+      <p>test</p>
+      </div>
 
-    <i class="bi bi-person" onClick={showInfo}></i>
+      <div className='desktop-icon'>
+      <RecycleFull variant="32x32_4"/>
+      <p>test</p>
+      </div>
 
+      <div className='desktop-icon'>
+      <Wmsui323919 variant="32x32_4"  onClick={showSkills}/> 
+      <p>test</p>
+      </div>
 
-    <i class="bi bi-gear"></i>
-    <i class="bi bi-envelope-exclamation"></i>
-    <i class="bi bi-file-earmark-text"></i>
+      <div className='desktop-icon'>
+      <Bookmark variant="32x32_4" onClick={showInfo} />
+      <p>test</p>
+      </div>
 
-    <Skills isVisible={skillsVisible} 
+          <Skills isVisible={skillsVisible} 
     hideSkills = {hideSkills}
     />
     <Info isVisible={infoVisible}
     hideInfo = {hideInfo}
     />
+
+    </div>
+
+
+    {/* <Skills isVisible={skillsVisible} 
+    hideSkills = {hideSkills}
+    />
+    <Info isVisible={infoVisible}
+    hideInfo = {hideInfo}
+    /> */}
     
 
     <style jsx> {`
@@ -70,5 +100,6 @@ function Desktop() {
     
   )
 }
+
 
 export default Desktop
