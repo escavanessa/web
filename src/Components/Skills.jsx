@@ -1,16 +1,17 @@
 import React from 'react'
 import './Skills.css'
 import "bootstrap-icons/font/bootstrap-icons.css";
+import { Frame } from '@react95/core';
 
 function Skills(props) {
 
 
   return (
     <>
-    <div id='skills-container'>
+    <Frame id='skills-container' w="200px" h="100px" bgColor="$material" boxShadow="$out" padding="$4">
         <div id='skills-title'>
-        <i id='skills-exit' class="bi bi-x-square" onClick={props.hideSkills}></i>
-        skills.exe
+        <p className='skills-title'>skills.exe</p>
+        <button id='skills-exitButton' onClick={props.hideSkills}>X</button>
         </div>
 
         <div id='skills-inner'>
@@ -22,7 +23,7 @@ function Skills(props) {
         <i id='skill-icon' class="bi bi-git"></i>
         <i id='skill-icon' class="bi bi-cloud"></i>
         </div>
-    </div>
+    </Frame>
     </>
   )
 }

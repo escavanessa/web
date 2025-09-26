@@ -14,9 +14,9 @@
 
 #info-title{
     height:18px;
-    width:100%;
     background:#000080;
     color:#FFF;
+    margin-left: 1px;
 }
 
 p.info-title{
