@@ -11,16 +11,11 @@ function App() {
   return (
     <>
 
-    <Frame display="flex" w="1280px" h="24px" bgColor="$material" boxShadow="$out" >
-    <Button padding='$0' w='15px' display='flex' justifyContent='center'></Button>
-          <p>VANESSA ESCAMILLA 1.2</p>
-    </Frame>
-
-    <Frame w="1280px" h="500px" bgColor="$material" boxShadow="$out" padding="$4" margin='0 auto'>
+    <Frame w="1080px" h="500px" bgColor="$material" boxShadow="$out" padding="$4" margin='0 auto'>
     <Desktop />
     </Frame>
 
-    <Frame display="flex" w="1280px" h="24px" bgColor="$material" boxShadow="$out" >
+    <Frame display="flex" w="1080px" h="24px" bgColor="$material" boxShadow="$out" >
       <Button padding='$0' w='15px' display='flex' justifyContent='center'>TEXT</Button>
     </Frame>
     </>
